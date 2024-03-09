@@ -1,3 +1,4 @@
+import { CounterApp } from "./components/CounterApp.jsx";
 import { LearnComponent } from "./components/LearnComponent.jsx"
 import { LearnEvent } from "./components/LearnEvent.jsx";
 import { LearnJSX } from "./components/LearnJSX.jsx"
@@ -21,7 +22,8 @@ function App() {
       {/* <LearnProps name="Zubi" roll={roll}/> */}
       {/* <LearnEvent/> */}
       {/* <LiftingStateUp myClick={getData}/> */}
-      <LearnState/>
+      {/* <LearnState/> */}
+      <CounterApp />
     </>
   )
 }
