@@ -4,9 +4,9 @@ export const CounterApp = () => {
     const [count, setCount] = useState(0);
     const handleCounter = () => {
 
-        // setCount(count + 1);
+        setCount(count + 1);
 
-        set
+        // setCount((prevCount) => prevCount + 1)
     }
 
     const resetCount = () => {
