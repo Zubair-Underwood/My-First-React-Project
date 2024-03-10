@@ -1,4 +1,4 @@
-import {useState, useMemo} from 'react'
+import { useState, useMemo } from 'react'
 import React from 'react'
 
 export const LearnUseMemo = () => {
@@ -18,10 +18,33 @@ export const LearnUseMemo = () => {
         setRandomNumber(newRandomNumber);
     };
 
+    // const isCountTen = () => {
+
+    //     console.log("isCountTen Called");
+    //     if (count === 10){
+
+    //         return "yes";
+    //     }
+
+    //     return "No";
+    // }
+
+
+    const isCountTen = useMemo(() => {
+
+        console.log("isCountTen Called");
+        if (count === 10) {
+
+            return "yes";
+        }
+
+        return "No";
+    }, [count])
 
     return (
         <>
-            <h1>Count: {count}</h1>
+            {/* <h1>is {count} equal to 10? --- {isCountTen()} </h1> */}
+            <h1>is {count} equal to 10? --- {isCountTen} </h1>
             <button onClick={handleIncreaseCount}>Increase Count</button>
             <hr />
             <h2>Random Number: {randomNumber}</h2>
