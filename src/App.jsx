@@ -5,6 +5,7 @@ import { LearnJSX } from "./components/LearnJSX.jsx"
 import { LearnProps } from "./components/LearnProps.jsx"
 import { LearnState } from "./components/LearnState.jsx";
 import { LearnUseEffect } from "./components/LearnUseEffect.jsx";
+import { LearnUseMemo } from "./components/LearnUseMemo.jsx";
 import { LiftingStateUp } from "./components/LiftingStateUp.jsx";
 
 
@@ -25,7 +26,8 @@ function App() {
       {/* <LiftingStateUp myClick={getData}/> */}
       {/* <LearnState/> */}
       {/* <CounterApp /> */}
-      <LearnUseEffect/>
+      {/* <LearnUseEffect/> */}
+      <LearnUseMemo />
     </>
   )
 }

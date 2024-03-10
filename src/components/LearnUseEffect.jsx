@@ -46,7 +46,7 @@ export const LearnUseEffect = () => {
     useEffect(() => {
 
         console.log("useEffect Called");
-        return () =>{
+        return () => {
             console.log("Component will unmount!!");
         }
     }, [count]);
